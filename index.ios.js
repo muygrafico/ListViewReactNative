@@ -9,23 +9,19 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  StatusBar
 } from 'react-native';
+
+import ListViewExample from './ListViewExample';
 
 export default class listViewTest extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <StatusBar barStyle='light-content' />
+        <Text style={styles.header}>Awesome Todo App</Text>
+        <ListViewExample />
       </View>
     );
   }
@@ -47,6 +43,20 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  StatusBar: {
+    backgroundColor: '#333'
+  },
+  header: {
+    alignItems: 'center',
+    color: 'white',
+    fontSize: 30,
+    fontWeight: '300',
+    paddingBottom: 10,
+    paddingTop:30,
+    textAlign: 'center',
+    backgroundColor: '#0ACDAD',
+    width: '100%'
   },
 });
 
