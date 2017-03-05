@@ -20,7 +20,7 @@ export default class listViewTest extends Component {
     return (
       <View style={styles.container}>
         <StatusBar barStyle='light-content' />
-        <Text style={styles.header}>Awesome Todo App</Text>
+        <Text style={styles.header}>List View reactNative</Text>
         <ListViewExample />
       </View>
     );
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     paddingTop:30,
     textAlign: 'center',
-    backgroundColor: '#0ACDAD',
+    backgroundColor: '#C7D835',
     width: '100%'
   },
 });
